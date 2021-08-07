@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: log-processor
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:output/testdb;DB_CLOSE_DELAY=-1
+    username: root
+    password:
